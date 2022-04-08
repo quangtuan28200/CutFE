@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  color: #4F5665;
+}
+
+.btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  outline: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-signIn {
+  border: none;
+  transition: 0.1s;
+}
+.btn-signIn:hover {
+  color: #F53838;
+}
+.btn-signUp {
+  padding: 13px 45px;
+  border-radius: 50px;
+  color: #F53838;
+  border: 1px solid;
+  margin-left: 30px;
+  transition: 0.2s;
+}
+.btn-signUp:hover {
+  background-color: #F53838;
+  color: white;
+}
+.btn-hero {
+  position: relative;
+  color: white;
+  font-weight: 700;
+  padding: 18px 78px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F53838;
+  box-shadow: none;
+  transition: 0.2s;
+}
+.btn-hero:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 10px 8px #ddd;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.header_nav {
+  display: flex;
+}
+.header_nav-item {
+  padding: 0 20px;
+}
+.header_nav-link {
+  transition: 0.2s;
+}
+.header_nav-link:hover {
+  color: #F53838;
+}
+
+.hero_container {
+  display: flex;
+}
+.hero_content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #0B132A;
+}
+.hero_content h1 span {
+  font-weight: 700;
+}
+.hero_content p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.hero_content p span {
+  font-weight: 500;
+}
+.intro_container {
+  margin: 100px 0;
+}
+.intro_list {
+  display: flex;
+  padding: 38px 91px;
+  border: 1px solid;
+  justify-content: space-between;
+}
+.intro_item {
+  display: flex;
+  padding: 30px 0;
+}
+.intro_icon i {
+  padding: 19px 20px;
+  color: #F53838;
+  border-radius: 50px;
+  background-color: #FFECEC;
+}
+.intro_content {
+  margin-left: 37px;
+}
+.intro_content h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #0B132A;
+}
+.intro_content p {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=app.css.map */

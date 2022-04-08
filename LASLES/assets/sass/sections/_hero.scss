@@ -1,0 +1,28 @@
+.hero{
+    &_container{
+        display: flex;
+    }
+
+    &_content{
+        & h1{
+            font-size: 50px;
+            font-weight: 500;
+            color: $heading-color;
+            & span{
+                font-weight: 700;
+            }
+        }
+
+        & p{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            & span{
+                font-weight: 500;
+            }
+        }
+    }
+
+    &_img{
+
+    }
+}

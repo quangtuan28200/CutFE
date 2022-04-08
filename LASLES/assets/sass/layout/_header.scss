@@ -1,0 +1,22 @@
+.header{
+    &_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+
+    &_nav{
+        display: flex;
+        &-item{
+            padding: 0 20px;
+        }
+        &-link{
+            transition: 0.2s;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
