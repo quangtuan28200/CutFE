@@ -18,8 +18,7 @@
         }
     }
 
-    &-signUp{
-        padding: 13px 45px;
+    &-signUp, &-select{
         border-radius: 50px;
         color: $primary-color;
         border: 1px solid;
@@ -30,6 +29,14 @@
             background-color: $primary-color;
             color: white;
         }
+    }
+
+    &-signUp{
+        padding: 13px 45px;
+    }
+
+    &-select{
+        padding: 13px 63px;
     }
 
     &-hero{

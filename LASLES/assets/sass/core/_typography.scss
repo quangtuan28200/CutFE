@@ -4,3 +4,25 @@ body{
     font-family: $font;
     color: $text-color;
 }
+
+.heading_section{
+    font-size: 35px;
+    font-weight: 500;
+    color: $heading-color;
+    padding-top: 100px;
+}
+
+.text_section{
+    padding-top: 20px;
+}
+
+.text-center{
+    text-align: center;
+    width: 555px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.item_text{
+    font-size: 14px;
+}

@@ -3,6 +3,18 @@
    License: none (public domain)
 */
 
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; //1rem = 10px
+    scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -37,6 +49,11 @@ ol, ul {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
+}
+img{
+    display: block;
+    max-width: 100%;
 }
 blockquote, q {
 	quotes: none;

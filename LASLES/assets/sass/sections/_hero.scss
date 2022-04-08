@@ -1,8 +1,4 @@
 .hero{
-    &_container{
-        display: flex;
-    }
-
     &_content{
         & h1{
             font-size: 50px;
@@ -14,15 +10,10 @@
         }
 
         & p{
-            margin-top: 20px;
-            margin-bottom: 50px;
+            padding-bottom: 50px;
             & span{
                 font-weight: 500;
             }
         }
-    }
-
-    &_img{
-
     }
 }

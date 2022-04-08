@@ -2,6 +2,18 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,6 +52,12 @@ ol, ul {
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 blockquote, q {
@@ -64,6 +82,28 @@ body {
   color: #4F5665;
 }
 
+.heading_section {
+  font-size: 35px;
+  font-weight: 500;
+  color: #0B132A;
+  padding-top: 100px;
+}
+
+.text_section {
+  padding-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+  width: 555px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.item_text {
+  font-size: 14px;
+}
+
 .btn {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -81,17 +121,22 @@ body {
 .btn-signIn:hover {
   color: #F53838;
 }
-.btn-signUp {
-  padding: 13px 45px;
+.btn-signUp, .btn-select {
   border-radius: 50px;
   color: #F53838;
   border: 1px solid;
   margin-left: 30px;
   transition: 0.2s;
 }
-.btn-signUp:hover {
+.btn-signUp:hover, .btn-select:hover {
   background-color: #F53838;
   color: white;
+}
+.btn-signUp {
+  padding: 13px 45px;
+}
+.btn-select {
+  padding: 13px 63px;
 }
 .btn-hero {
   position: relative;
@@ -115,16 +160,39 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.l-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.l-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 88px;
 }
 .header_nav {
   display: flex;
@@ -139,9 +207,14 @@ body {
   color: #F53838;
 }
 
-.hero_container {
-  display: flex;
+section {
+  padding-bottom: 100px;
 }
+
+.section_main {
+  background-color: #F6F6F6;
+}
+
 .hero_content h1 {
   font-size: 50px;
   font-weight: 500;
@@ -151,24 +224,26 @@ body {
   font-weight: 700;
 }
 .hero_content p {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .hero_content p span {
   font-weight: 500;
 }
+
 .intro_container {
-  margin: 100px 0;
-}
-.intro_list {
-  display: flex;
-  padding: 38px 91px;
-  border: 1px solid;
-  justify-content: space-between;
+  padding: 38px 0;
+  box-shadow: 0 30px 40px #EEEFF2;
 }
 .intro_item {
   display: flex;
-  padding: 30px 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-right: 2px solid #EEEFF2;
+}
+.intro_item:last-child {
+  border-right: none;
 }
 .intro_icon i {
   padding: 19px 20px;
@@ -186,6 +261,92 @@ body {
 }
 .intro_content p {
   font-size: 20px;
+}
+
+.provide_container {
+  margin-left: -85px;
+  margin-right: -85px;
+}
+.provide_img {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.provide_content {
+  padding-left: 85px;
+  padding-right: 85px;
+  max-width: 46%;
+  margin-top: auto;
+}
+.provide_item {
+  display: flex;
+  padding: 15px 0;
+}
+.provide_item:first-child {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.provide_item:last-child {
+  padding-bottom: 0;
+}
+.provide_item i {
+  color: #2FAB73;
+}
+.provide_item p {
+  padding-left: 10px;
+}
+
+.plan_content {
+  padding-top: 60px;
+}
+.plan_list {
+  margin: 0;
+}
+.plan_itemContent {
+  background: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 80px 70px 50px 70px;
+  display: flex;
+  flex-direction: column;
+  height: 760px;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan_itemContent img {
+  margin: 0 auto;
+}
+.plan_itemContent button {
+  margin: 0 auto;
+}
+.plan_itemHeading {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 30px 0;
+  color: #0B132A;
+  text-align: center;
+}
+.plan_svItem {
+  display: flex;
+  align-items: baseline;
+  padding: 10px 0;
+}
+.plan_svItem i {
+  color: #2FAB73;
+}
+.plan_svItem p {
+  padding-left: 20px;
+}
+.plan_price {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0B132A;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.plan_price span {
+  color: #4F5665;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=app.css.map */

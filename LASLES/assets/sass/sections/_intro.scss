@@ -1,18 +1,20 @@
 .intro{
     &_container{
-        margin: 100px 0;
-    }
-
-    &_list{
-        display: flex;
-        padding: 38px 91px;
-        border: 1px solid;
-        justify-content: space-between;
+        padding: 38px 0;
+        box-shadow: 0 30px 40px $gray-colorLight;
     }
 
     &_item{
         display: flex;
-        padding: 30px 0;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-right: 2px solid $gray-colorLight;
+
+        &:last-child{
+            border-right: none;
+        }
     }
 
     &_icon{
